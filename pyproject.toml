@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dummyapp"
+version = "0.1.0"
+description = ""
+authors = ["mgbvox <mgbvox@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = {extras = ["all"], version = "^0.85.0"}
+docker = "^6.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {extras = ["jupyter"], version = "^22.10.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
