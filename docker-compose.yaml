@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: api.dockerfile
+    environment:
+      - PORT=${API_PORT}
+    ports:
+      - ${API_PORT}:${API_PORT}
